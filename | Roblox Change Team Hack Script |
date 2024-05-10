@@ -1,0 +1,9 @@
+local Players = game:GetService("Players")
+
+wait(10)
+
+for i, v in pairs(Players:GetChildren()) do
+	if v:IsA("Player") then
+		v.Team = game.Teams.Blue
+	end
+end
